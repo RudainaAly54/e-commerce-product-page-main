@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Nav begining-->
+ <nav>
+  <div class="left">
+    <img src="images/icon-menu.svg" alt="mobile icon" id="menu-icon">
+      <img src="images/logo.svg" alt="sneakers logo">
+  <ul id="mobile-menu">
+    <li><a href="#">Collections</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+
+  <div class="right">
+    <img src="images/icon-cart.svg" alt="cart button" id="cart-icon">
+    <div class="notification">0</div>
+     <img src="images/image-avatar.png" alt="profile pic" class="ava">
+  </div>
+ </nav>
+<!-- Nav endind-->
+
+  <!-- Header begining -->
+   <header id="product">
+    <div class="product-pics">
+      <div class="main-pic">
+        <img src="images/image-product-1.jpg" alt="shoes main">
+        <div class="mobile-arrows">
+      <span class="left-arrow"><</span>
+      <span class="right-arrow">></span>
+    </div>
+      </div>
+      <div class="thumbnails">
+        <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail 1" class="lilpic">
+        <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail 2" class="lilpic">
+        <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail 3" class="lilpic">
+        <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail 4" class="lilpic">
+      </div>
+    </div>
+
+    <div class="product-content">
+      <h1>
+        <span>
+            Sneaker Company
+        </span>
+          Fall Limited Edition Sneakers 
+      </h1>
+
+      <p class="product-details">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="price">
+        <p class="price-det">
+          $125.00 <span class="discount">  50%  </span> 
+      </p>
+      <span class="previous-price">$250.00</span>
+      </div>
+
+      <div class="btn">
+              <div class="quantity">
+        <button id="decrement">-</button>
+        <p id="quantity">0</p>
+        <button id="increment">+</button>
+      </div>
+      <button id="addToCart"> <img src="images/icon-cart.svg" alt="cart icon" class="cart-icon">      Add to cart</button>
+      </div>
+    </div>
+   </header>
+  <!-- Header ending -->
+
+  <!-- Cart div start-->
+    <div id="cart">
+      <h3>Cart</h3>
+      <hr>
+      <div id="empty">
+        <p>Your cart is empty</p>
+      </div>
+
+      <div id="filled">
+        <div class="details">
+          <img src="images/image-product-1-thumbnail.jpg" alt="product photo">
+          <p>fall Limited Edition Sneakers
+            $125.500 x <span id="userQuantity"> 3</span> <span id="total">$375.00</span> 
+          </p>
+          <img src="images/icon-delete.svg" alt="delete" id= 'delete'>
+        </div>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+    <!-- Cart div end -->
+
+    <!-- Light box start -->
+     <div id="lightbox">
+      <img src="images/icon-close.svg" alt="close">
+      <div class="main-pic">
+        <img src="images/image-product-1.jpg" alt="product picture">
+      </div>
+      <div class="thumbnails">
+                <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail 1" class="lilpic">
+               <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail 2" class="lilpic">
+                <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail 3" class="lilpic">
+               <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail 4" class="lilpic">
+      </div>
+      <div class="left-arrow"><p>
+        <
+      </p></div>
+      <div class="right-arrow">
+        <p>
+        >
+      </p></div>
+     </div>
+    <!-- Light box end -->
+  <script src="script.js"></script>
+</body>
+</html>
